@@ -7,10 +7,16 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "gen-graphql": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "^3.4.13",
+    "@graphql-codegen/cli": "^2.2.0",
+    "@graphql-codegen/introspection": "^2.1.0",
+    "@graphql-codegen/typescript": "^2.2.2",
+    "@graphql-codegen/typescript-operations": "^2.1.4",
+    "@graphql-codegen/typescript-react-apollo": "^3.1.4",
     "graphql": "^15.6.0",
     "graphql-tag": "^2.12.5",
     "react": "17.0.2",
@@ -29,7 +35,12 @@
     "metro-react-native-babel-preset": "^0.66.0",
     "react-native-codegen": "^0.0.7",
     "react-test-renderer": "17.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "@graphql-codegen/typescript": "2.2.2",
+    "@graphql-codegen/fragment-matcher": "3.1.0",
+    "@graphql-codegen/typescript-react-apollo": "3.1.4",
+    "@graphql-codegen/typescript-operations": "2.1.4",
+    "@graphql-codegen/cli": "2.2.0"
   },
   "resolutions": {
     "@types/react": "^17"

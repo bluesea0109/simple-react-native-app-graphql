@@ -1,16 +1,15 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
-import { Text, View } from 'react-native';
 import { createApolloClient } from './common/config/apollo-client';
+
+import Home from './screens/Home';
 
 const apolloClient = createApolloClient();
 
 const App = () => {
   return (
     <ApolloProvider client={apolloClient}>
-      <View>
-        <Text>Hello</Text>
-      </View>
+      <Home />
     </ApolloProvider>
   );
 };
